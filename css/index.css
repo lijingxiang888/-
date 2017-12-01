@@ -626,10 +626,10 @@ body {
 }
 
 .picMarquee-left .test {
-	width: 990px;
+	width: 62px;
 	position: absolute;
-	left: 0;
-	top: 50%;
+	right: 0;
+	top: 16px;
 	margin-top: -16px;
 	z-index: 100;
 }
@@ -730,13 +730,14 @@ body {
 
 .sale h2 {
 	width: 100%;
-	height: 40px;
-	line-height: 40px;
+	height: 55px;
+	line-height: 55px;
 	font-size: 26px;
 	font-weight: normal;
 	padding-left: 20px;
 	background-color: #e01222;
 	color: #fff;
+	box-sizing: border-box;
 }
 
 .sale-more h2 i {
@@ -748,7 +749,7 @@ body {
 .sale h2 span {
 	float: right;
 	font-size: 20px;
-	margin-top: 6px;
+	margin-top: 14px;
 	margin-right: 16px;
 	line-height: 30px;
 	background-color: #440106;
@@ -819,6 +820,77 @@ body {
 	border-radius: 10px;
 }
 
+/*sale_min*/
+.sale_min {
+	width: 100%;
+	height: 500px;
+	margin-top: 40px;
+}
+.sale_min .sale_min-left {
+	float: left;
+	width: 49.5%;
+	height: 100%;
+}
+.sale_min .sale_min-right {
+	float: right;
+	width: 49.5%;
+	height: 100%;
+}
+.sale_min .sale_min-left h3,.sale_min .sale_min-right h3 {
+	height: 55px;
+	line-height: 55px;
+	padding-left: 20px;
+	color: #fff;
+	font-size: 22px;
+	font-weight: normal;
+	background-color: #974676;
+}
+.sale_min .sale_min-left h3 span,.sale_min .sale_min-right h3 span{
+	display: block;
+	float: left;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	margin-top: 13px;
+	margin-right: 10px;
+	text-align: center;
+	background-color: hsla(0,0%,100%,.2);
+}
+.sale_min .sale_min-left ul,.sale_min .sale_min-right ul {
+	float: left;
+	width: 33.33%;
+}
+.sale_min .sale_min-left ul li,.sale_min .sale_min-right ul li {
+	height: 148px;
+	border-right: 1px solid #e6e6e6;
+	box-sizing: border-box;
+}
+.sale_min .sale_min-left ul li:last-child,.sale_min .sale_min-right ul li:last-child {
+	border-bottom: 1px solid #e6e6e6;
+}
+.sale_min .sale_min-left ul img,.sale_min .sale_min-right ul img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	transition: all .5s linear;
+}
+.sale_min .sale_min-left ul span,.sale_min .sale_min-right ul span{
+	width: 50px;
+	float: right;
+	display: block;
+	color: #5e6c90;
+	vertical-align: top;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.sale_min .sale_min-left ul img:hover,.sale_min .sale_min-right ul img:hover{
+	transform: translate(10px,0);
+	-webkit-transform: translate(10px,0);
+}
+.ad_banner {
+	margin-top: 40px;
+}
 .footer {
 	width: 100%;
 	height: 500px;
@@ -881,6 +953,9 @@ body {
 	background: url("../images/map.png") no-repeat center;
 	background-size: 242px 242px;
 }
+.footer .help .business a {
+	color: #666;
+}
 
 .footer .help .business p:nth-child(2),.footer .help .business p:nth-child(3) {
 	font-size: 14px;
@@ -937,6 +1012,7 @@ body {
 .back {
 	position: fixed;
 	width: 50px;
+	height: 45px;
 	left: 275px;
 	top: 756px;
 	font-size: 14px;
@@ -944,4 +1020,5 @@ body {
 	background-color: red;
 	text-align: center;
 	color: #fff;
+	cursor: pointer;
 }
